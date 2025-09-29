@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Promociones Pizzería</title>
   <style>
     body {
-      background-color: #fff3e6; /* Fondo color claro */
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
+      background-color: #ffefcc; /* Fondo cálido simple */
     }
+
     h1 {
+      text-align: center;
       color: #b22222;
+      padding: 20px;
     }
-    h2 {
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 2px solid #b22222;
+      border-radius: 10px;
+      width: 220px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .nombre {
+      margin: 10px 0;
+      font-size: 16px;
+      font-weight: bold;
       color: #d35400;
     }
-    p {
-      font-size: 18px;
+
+    .precio {
+      display: inline-block;
+      background: #b22222;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Promociones de hoy</h1>
 
-  <!-- Promoción 1 -->
-  <h2>2x1 en Pizzas Medianas</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza mediana" width="400">
-  <p>Compra 1 pizza mediana y llévate otra gratis.</p>
+  <h1>🍕 Promociones de Hoy 🍕</h1>
 
-  <!-- Promoción 2 -->
-  <h2>30% de descuento en Pizza Grande</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="Pizza grande" width="400">
-  <p>Disfruta de todas las pizzas grandes con 30% de descuento.</p>
+  <div class="contenedor">
+    <!-- Promo 1 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza Mediana">
+      <div class="nombre">2x1 en Pizzas Medianas</div>
+      <div class="precio">S/29.90</div>
+    </div>
 
-</body>
-</html> 
+    <!-- Promo 2 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="Pizza Grande">
+      <div class="nombre">30% en Pizza Grande</div>
+      <div class="precio">S/35.00</div>
+    </div>
+
+    <!-- Promo 3 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Combo Familiar">
+      <div class="nombre">Combo Familiar</div>
+      <div class="precio">S/59.90</div>
+    </div>
+
+    <!-- Promo 4 -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1esko3ASG1uOoJlB-pgdlnRxdCFDmzipiBQ&s" alt="Pizza con Postre">
+      <div class="nombre">Pizza + Gaseosa</div>
+      <div class="precio">S/39.90</div>
+    </div>
+  </div>
+
 </body>
 </html>

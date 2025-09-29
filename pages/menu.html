@@ -1,27 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> </title>
+  <meta charset="UTF-8">
+  <title>Menú Pizzería</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffefd5;
+      text-align: center;
+    }
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .shadowbox {
+      border: 1px solid #000;
+      padding: 10px;
+      background: #fff;
+      width: 200px;
+    }
+    .shadowbox img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      text-align: left;
+      margin: 5px 0;
+    }
+  </style>
 </head>
-
 <body>
-    <a href="" class="logo"> MENU </a>
-    <input type="checkbox" id=" MENU ">
-    <label for="MENU">
 
-    </label>
-    <ul> </ul>
-    <li>margarita</li>......10.00
-    <li>americana</li>......10.00
-    <li>peperoni</li>.......10.00
-    <li>hawaiana</li>.......10.00
-    <li>vegetariana</li>....10.00
-    <li>carnivora</li>......10.00
+  <h1>Menú</h1>
+  <div class="contenedor">
 
+    <div class="shadowbox">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza Margherita">
+      <h2>Pizzas</h2>
+      <ul>
+        <li>Margherita -------- S/.10</li>
+        <li>Pepperoni -------- S/.12</li>
+        <li>BBQ Chicken ------ S/.14</li>
+        <li>Veggie Delight --- S/.11</li>
+        <li>Hawaiian --------- S/.13</li>
+      </ul>
+    </div>
+
+    <div class="shadowbox">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCC0n-t7TY1uTtMap9hY0RH15PZ2WZC1YPsw&s" alt="Bebida Coca Cola">
+      <h2>Bebidas</h2>
+      <ul>
+        <li>Coca Cola 1.5L ---- S/.10</li>
+        <li>Inka Kola 1.5L ---- S/.10</li>
+        <li>Limonada Frozen -- S/.14</li>
+        <li>Maracuyá Frozen -- S/.11</li>
+        <li>Infusiones -------- S/. 3</li>
+      </ul>
+    </div>
+
+    <div class="shadowbox">
+      <img src="https://cocinaperuana.espaciolatino.com/recetas-de-dulces/img600/torta-de-chocolate.jpg" alt="Torta de chocolate">
+      <h2>Postres</h2>
+      <ul>
+        <li>Soufle de fresas -- S/.10</li>
+        <li>Pay de limón ------ S/. 7</li>
+        <li>Pay de manzana --- S/. 7</li>
+        <li>Torta chocolate -- S/. 8</li>
+        <li>Crema volteada --- S/. 8</li>
+      </ul>
+    </div>
+
+    <div class="shadowbox">
+      <img src="https://media.istockphoto.com/id/182445956/es/foto/tocino-de-fondo.jpg?s=612x612&w=0&k=20&c=elKz2VBnz78rgTHxXMnaCOrTJBQ9gVNSyFi5kKeR_8Q=" alt="Tocino extra">
+      <h2>Extras</h2>
+      <ul>
+        <li>Extra queso ------- S/.10</li>
+        <li>Extra jamón ------- S/.12</li>
+        <li>Extra carnes ------ S/.14</li>
+        <li>Extra tocino ------ S/.11</li>
+      </ul>
+    </div>
+
+  </div>
 </body>
-
 </html>
